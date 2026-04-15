@@ -1,0 +1,32 @@
+USE netflix_content_strategy;
+
+CREATE VIEW vw_catalog_summary AS
+SELECT
+    type,
+    COUNT(*) AS total_titles
+FROM netflix_catalog_features
+GROUP BY type;
+
+CREATE VIEW vw_content_release_trend AS
+SELECT
+    release_year,
+    type,
+    COUNT(*) AS total_titles
+FROM netflix_catalog_features
+GROUP BY release_year, type;
+
+CREATE VIEW vw_title_benchmark AS
+SELECT
+    title,
+    type,
+    imdb_score,
+    imdb_votes,
+    weighted_performance_score
+FROM netflix_title_performance;
+
+CREATE VIEW vw_peaky_blinders_season_summary AS
+SELECT
+    season,
+    AVG(rating) AS avg_season_rating
+FROM peaky_blinders_episodes_clean
+GROUP BY season;
