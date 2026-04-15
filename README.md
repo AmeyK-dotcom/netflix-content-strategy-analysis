@@ -21,7 +21,7 @@ The project is structured into two dashboards for clarity:
 
 ## 🔗 Live Dashboard
 
-👉 [View Tableau Dashboard]https://public.tableau.com/views/NetflixContentOverview_17755751541410/NetflixContentOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+👉 https://public.tableau.com/views/NetflixContentOverview_17755751541410/NetflixContentOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ---
 
